@@ -1,6 +1,7 @@
 import { useAnimeByld } from "@/hook/useAnimeByld";
 import { AnimeVideos } from "../AnimeVideos";
 import { AnimePictures } from "../AnimePictures";
+import { AnimeCharacters } from "../AnimeCharacters";
 
 export type AnimeByldType = "AnimeByld"
 export interface AnimeByldProps {
@@ -44,7 +45,8 @@ export const AnimeByld = ({ styleTemplate = "AnimeByld" }: AnimeByldProps) => {
                     </p>
                     {animebyld?.data?.trailer?.embed_url}
                     <AnimeVideos/>
-                    <AnimePictures/>
+          
+                    <AnimeCharacters/>
                 </div>
             </div>
 
